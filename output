@@ -1,0 +1,71 @@
+===== TO-DO LIST APP =====
+1. Add Task
+2. View Tasks
+3. Mark Task as Done
+4. Delete Task
+5. Exit
+Enter your choice: 1
+Enter task: running
+Task added with ID 1
+
+===== TO-DO LIST APP =====
+1. Add Task
+2. View Tasks
+3. Mark Task as Done
+4. Delete Task
+5. Exit
+Enter your choice: 1
+Enter task: crime
+Task added with ID 2
+
+===== TO-DO LIST APP =====
+1. Add Task
+2. View Tasks
+3. Mark Task as Done
+4. Delete Task
+5. Exit
+Enter your choice: 2
+
+Your Tasks:
+ID: 1 | running | ❌ Not Done
+ID: 2 | crime | ❌ Not Done
+
+===== TO-DO LIST APP =====
+1. Add Task
+2. View Tasks
+3. Mark Task as Done
+4. Delete Task
+5. Exit
+Enter your choice: 3
+Enter task ID to mark as done: 2
+Task 2 marked as done!
+
+===== TO-DO LIST APP =====
+1. Add Task
+2. View Tasks
+3. Mark Task as Done
+4. Delete Task
+5. Exit
+Enter your choice: 4
+Enter task ID to delete: 2
+Task 2 deleted!
+
+===== TO-DO LIST APP =====
+1. Add Task
+2. View Tasks
+3. Mark Task as Done
+4. Delete Task
+5. Exit
+Enter your choice: 6
+Invalid choice! Try again.
+
+===== TO-DO LIST APP =====
+1. Add Task
+2. View Tasks
+3. Mark Task as Done
+4. Delete Task
+5. Exit
+Enter your choice: 5
+Exiting... Goodbye!
+
+=== Code Execution Successful ===
