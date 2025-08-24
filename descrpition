@@ -1,0 +1,64 @@
+Title : To-Do List CLI Application
+
+Introduction:
+
+A To-Do List application helps users manage their daily tasks. Using Python lists and dictionaries, this project provides a simple command-line interface (CLI) to add, view, update, and delete tasks efficiently.
+
+Problem Statement
+
+People often struggle to remember their pending tasks. A simple task manager is needed that can store, update, and display tasks in an easy-to-use format.
+
+Objectives:
+
+Build a simple command-line app using Python lists & dictionaries.
+
+Allow users to add, view, mark as done, and delete tasks.
+
+Maintain tasks with unique IDs for better organization.
+
+Provide an interactive menu-driven interface.
+
+Methodology
+
+Data Structure:
+
+Tasks stored as a list of dictionaries ([{"id": 1, "task": "Example", "done": False}, ...]).
+
+Operations Implemented:
+
+Add Task → Append dictionary to list.
+
+View Tasks → Display all tasks with their status.
+
+Mark Done → Update dictionary value (done=True).
+
+Delete Task → Remove dictionary from list by ID.
+
+Flowchart:
+          ┌──────────────────┐
+          │  Start Program   │
+          └───────┬──────────┘
+                  │
+        ┌─────────▼─────────┐
+        │  Show Main Menu   │
+        └───────┬──────────┘
+                │
+     ┌──────────▼───────────┐
+     │  User Choice?         │
+     └─┬─────────┬──────────┘
+       │         │
+   ┌───▼───┐ ┌───▼─────┐
+   │ Add   │ │ View     │
+   │ Task  │ │ Tasks    │
+   └───┬───┘ └────┬─────┘
+       │          │
+   ┌───▼───┐  ┌───▼─────┐
+   │ Mark  │  │ Delete  │
+   │ Done  │  │ Task    │
+   └───┬───┘  └────┬─────┘
+       │          │
+       └─────┬────┘
+             ▼
+     ┌──────────────┐
+     │   Exit App   │
+     └──────────────┘
