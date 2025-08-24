@@ -1,0 +1,68 @@
+# Simple To-Do List CLI App
+
+# Each task will be stored as a dictionary
+# Example: {"id": 1, "task": "Finish homework", "done": False}
+
+tasks = []
+task_id = 1
+
+def show_menu():
+    print("\n===== TO-DO LIST APP =====")
+    print("1. Add Task")
+    print("2. View Tasks")
+    print("3. Mark Task as Done")
+    print("4. Delete Task")
+    print("5. Exit")
+
+def add_task():
+    global task_id
+    task = input("Enter task: ")
+    tasks.append({"id": task_id, "task": task, "done": False})
+    print(f"Task added with ID {task_id}")
+    task_id += 1
+
+def view_tasks():
+    if not tasks:
+        print("No tasks found!")
+        return
+    print("\nYour Tasks:")
+    for t in tasks:
+        status = "✔️ Done" if t["done"] else "❌ Not Done"
+        print(f"ID: {t['id']} | {t['task']} | {status}")
+
+def mark_done():
+    tid = int(input("Enter task ID to mark as done: "))
+    for t in tasks:
+        if t["id"] == tid:
+            t["done"] = True
+            print(f"Task {tid} marked as done!")
+            return
+    print("Task not found!")
+
+def delete_task():
+    tid = int(input("Enter task ID to delete: "))
+    for t in tasks:
+        if t["id"] == tid:
+            tasks.remove(t)
+            print(f"Task {tid} deleted!")
+            return
+    print("Task not found!")
+
+# Main Loop
+while True:
+    show_menu()
+    choice = input("Enter your choice: ")
+    
+    if choice == "1":
+        add_task()
+    elif choice == "2":
+        view_tasks()
+    elif choice == "3":
+        mark_done()
+    elif choice == "4":
+        delete_task()
+    elif choice == "5":
+        print("Exiting... Goodbye!")
+        break
+    else:
+        print("Invalid choice! Try again.")
